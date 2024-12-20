@@ -8,7 +8,7 @@ async function storeData(id, data) {
       databaseId: 'prediction'
     });
  
-    const predictCollection = db.collection('predictions');
+    const predictCollection = db.collection('prediction');
     return predictCollection.doc(id).set(data);
   }catch(error) {
     console.error(error);
