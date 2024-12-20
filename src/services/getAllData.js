@@ -7,7 +7,7 @@ const getAllData = async () => {
         databaseId: 'prediction'
     });
   
-    const predictCollection = db.collection('predictions');
+    const predictCollection = db.collection('prediction');
   
     const snapshot = await predictCollection.orderBy('createdAt', 'desc').get();
   
