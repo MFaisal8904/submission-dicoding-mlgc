@@ -3,7 +3,7 @@ const { Firestore } = require('@google-cloud/firestore');
 const getAllData = async () => {
     const db = new Firestore({
         projectId: 'submissionmlgc-mfaisal',
-        keyFilename: 'submissionmlgc-mfaisal-6f5132b37336.json',
+        keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
         databaseId: 'prediksi-cancer'
     });
   
